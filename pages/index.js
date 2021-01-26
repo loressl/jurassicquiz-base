@@ -1,4 +1,7 @@
+import React, { useState } from 'react'
 import styled from 'styled-components'
+import { useRouter } from 'next/router'
+
 import db from '../db.json'
 import Widget from '../src/components/Widget'
 import QuizBackground from '../src/components/QuizBackground'
@@ -28,17 +31,32 @@ export const QuizContainer = styled.div`
   }
 `;
 
-
 export default function Home() {
+  const router = useRouter()
+  const [name, setName] = useState('')
+
   return (
     <QuizBackground backgroundImage={db.bg}>
       <QuizContainer>
         <Widget>
           <Widget.Header>
-            <h1>Jurassic Park</h1>
+            <h1>Jurassic World</h1>
           </Widget.Header>
           <Widget.Content>
-            <p>teste</p>
+            <form onSubmit={(event) => {
+              event.preventDefault()
+              router.push(`/quiz?name=${name}`)
+            }}>
+              <input
+                onChange={(event) => {
+                  setName(event.target.value)
+                }}
+                placeholder="Diz ai seu nome"
+              />
+              <button type="submit" disabled={name.length === 0}>
+                Jogar {name}
+              </button>
+            </form>
           </Widget.Content>
         </Widget>
         <Widget>
@@ -48,7 +66,7 @@ export default function Home() {
           </Widget.Content>
         </Widget>
         <Footer />
-        <GitHubCorner projectUrl="https://github.com/loressl"/>
+        <GitHubCorner projectUrl="https://github.com/loressl" />
       </QuizContainer>
     </QuizBackground>
   )
