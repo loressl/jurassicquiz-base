@@ -1,28 +1,64 @@
 {
-    "bg": "https://wallpapercave.com/wp/wp4644835.jpg",
+    "bg": "https://cdnb.artstation.com/p/assets/images/images/003/005/049/large/erik-halsey-trex015.jpg?1468386736",
     "title": "Jurassic Quiz",
     "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Como fazer um seletor por id via CSS?",
+        "image": "https://i.pinimg.com/originals/82/bb/22/82bb228563e1612f3752c5377f7fe138.gif",
+        "title": "Em que ilha fica 'Jurassic World'? ",
         "description": "Essa é pra aquecer",
-        "answer": 2,
+        "answer": 3,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+          "Isla Muerta",
+          "Isla Sorna",
+          "Isla Nublar",
+          "Isla Tacano"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
+        "image": "https://i.kym-cdn.com/photos/images/original/000/980/334/59f.gif",
+        "title": "O supervisor de Owen é um militar chamado Vic Hoskins. O que ele quer fazer com os velociraptores?",
         "description": "Faz tempo em haha",
-        "answer": 0,
+        "answer": 2,
         "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+           "Domestica-los",
+           "Arma-los",
+           "Usar em circos",
+           "Treinar para trabalhar"
+        ]
+      },
+      {
+        "image": "https://itgeekgirls.files.wordpress.com/2015/06/tumblr_nflwi8l04y1tdkro1o2_500.gif",
+        "title": "Qual animal finalmente mata o Indominus Rex?",
+        "description": "Será que lembra?",
+        "answer": 4,
+        "alternatives": [
+           "Dilofossauro",
+           "Tiranossauro Rex",
+           "Velociraptor",
+           "Mosassauro"
+        ]
+      },
+      {
+        "image": "https://64.media.tumblr.com/69199504988a3c7652e7a317ba20acb0/tumblr_nqj5sw4bSU1u5tn07o4_540.gif",
+        "title": "Qual era o gênero do Indominus Rex que apareceu no filme?",
+        "description": "Tem 50% de chance",
+        "answer": 1,
+        "alternatives": [
+           "Fêmea",
+           "Macho"
+        ]
+      },
+      {
+        "image": "https://64.media.tumblr.com/fc5f48be49646378c986c1971b893da1/tumblr_nm06icHn2R1r9pt1so2_500.gif",
+        "title": "Qual veículo é usado para entrar no parque pelos grandes portões?",
+        "description": "Para fechar",
+        "answer": 3,
+        "alternatives": [
+           "Nenhum. Iam andando",
+           "Drones Hover",
+           "Monotrilho",
+           "Caminhões"
         ]
       }
     ],
