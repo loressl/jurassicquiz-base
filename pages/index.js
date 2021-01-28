@@ -37,7 +37,10 @@ export default function Home() {
             <form
               onSubmit={(event) => {
                 event.preventDefault()
-                router.push(`/quiz?name=${name}`)
+                router.push({
+                  pathname:'/quiz',
+                  query: {name : name}
+                })
               }}>
               <Input
                 onChange={(event) => setName(event.target.value)}

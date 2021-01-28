@@ -1,5 +1,5 @@
 {
-    "bg": "https://cdnb.artstation.com/p/assets/images/images/003/005/049/large/erik-halsey-trex015.jpg?1468386736",
+    "bg": "https://images5.alphacoders.com/923/thumb-1920-923316.jpg",
     "title": "Jurassic Quiz",
     "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
     "questions": [
@@ -7,7 +7,7 @@
         "image": "https://i.pinimg.com/originals/82/bb/22/82bb228563e1612f3752c5377f7fe138.gif",
         "title": "Em que ilha fica 'Jurassic World'? ",
         "description": "Essa é pra aquecer",
-        "answer": 3,
+        "answer": 2,
         "alternatives": [
           "Isla Muerta",
           "Isla Sorna",
@@ -19,7 +19,7 @@
         "image": "https://i.kym-cdn.com/photos/images/original/000/980/334/59f.gif",
         "title": "O supervisor de Owen é um militar chamado Vic Hoskins. O que ele quer fazer com os velociraptores?",
         "description": "Faz tempo em haha",
-        "answer": 2,
+        "answer": 1,
         "alternatives": [
            "Domestica-los",
            "Arma-los",
@@ -31,7 +31,7 @@
         "image": "https://itgeekgirls.files.wordpress.com/2015/06/tumblr_nflwi8l04y1tdkro1o2_500.gif",
         "title": "Qual animal finalmente mata o Indominus Rex?",
         "description": "Será que lembra?",
-        "answer": 4,
+        "answer": 3,
         "alternatives": [
            "Dilofossauro",
            "Tiranossauro Rex",
@@ -43,7 +43,7 @@
         "image": "https://64.media.tumblr.com/69199504988a3c7652e7a317ba20acb0/tumblr_nqj5sw4bSU1u5tn07o4_540.gif",
         "title": "Qual era o gênero do Indominus Rex que apareceu no filme?",
         "description": "Tem 50% de chance",
-        "answer": 1,
+        "answer": 0,
         "alternatives": [
            "Fêmea",
            "Macho"
@@ -53,7 +53,7 @@
         "image": "https://64.media.tumblr.com/fc5f48be49646378c986c1971b893da1/tumblr_nm06icHn2R1r9pt1so2_500.gif",
         "title": "Qual veículo é usado para entrar no parque pelos grandes portões?",
         "description": "Para fechar",
-        "answer": 3,
+        "answer": 2,
         "alternatives": [
            "Nenhum. Iam andando",
            "Drones Hover",
