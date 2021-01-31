@@ -58,7 +58,7 @@ function ResultWidget({ results, name }) {
     );
 }
 
-function LoadingWidget({ loading }) {
+function LoadingWidget({ loading, color }) {
     return (
         <Widget>
             <Widget.Header>
@@ -72,7 +72,7 @@ function LoadingWidget({ loading }) {
                 }}
             >
                 <HashLoader
-                    color={db.theme.colors.primary}
+                    color={color}
                     loading={loading}
                     size={60}
                 />
@@ -236,7 +236,7 @@ export default function QuizPage({ externalQuestions, externalBg, name }) {
                     />
                 )}
 
-                {screenState === screenStates.LOADING && <LoadingWidget loading={screenState === screenStates.LOADING} />}
+                {screenState === screenStates.LOADING && <LoadingWidget color={bg.theme.colors.primary} loading={screenState === screenStates.LOADING} />}
 
                 {screenState === screenStates.RESULT && <ResultWidget results={results} name={name} />}
             </QuizContainer>
