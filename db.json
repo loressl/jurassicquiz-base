@@ -21,8 +21,8 @@
         "description": "Faz tempo em haha",
         "answer": 1,
         "alternatives": [
-           "Domestica-los",
-           "Arma-los",
+           "Domesticá-los",
+           "Armá-los",
            "Usar em circos",
            "Treinar para trabalhar"
         ]
@@ -56,7 +56,7 @@
         "answer": 2,
         "alternatives": [
            "Nenhum. Iam andando",
-           "Drones Hover",
+           "Carros",
            "Monotrilho",
            "Caminhões"
         ]
