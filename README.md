@@ -1,3 +1,5 @@
+* Projeto realizado durante a Imersão React + Next do Alura.
+
 # Screen
 
 <img src="screens/alura_quiz.gif" width="900px" height="500px">
