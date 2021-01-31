@@ -9,15 +9,27 @@ import QuizContainer from '../../components/QuizContainer';
 import AlternativesForm from '../../components/AlternativeForm';
 import Button from '../../components/Button';
 import BackLinkArrow from '../../components/BackLinkArrow';
+import { motion } from 'framer-motion'
+import Confetti from 'react-confetti'
 
-//import loadingAnimation from './animations/loading.json';
 
 function ResultWidget({ results, name }) {
+    const [timeConfetti, setTimeConfetti] = React.useState(true)
+
+    React.useEffect(()=>{
+        setTimeout(()=>{
+            setTimeConfetti(false)
+        },2*4000)   
+    })
+
     return (
         <Widget>
-            <BackLinkArrow href="/" />
             <Widget.Header>
+                <BackLinkArrow href="/" />
                 Tela de Resultado:
+                <Confetti
+                   recycle={timeConfetti}
+                />
             </Widget.Header>
             <Widget.Content>
                 {name !== undefined && <h2>{name}, </h2>}
@@ -83,7 +95,16 @@ function QuestionWidget({
     const hasAlternativeSelected = selectedAlternative !== undefined;
 
     return (
-        <Widget>
+        <Widget
+            as={motion.section}
+            transition={{ delay: 0, duration: 0.5 }}
+            variants={{
+                show: { opacity: 1, y: '0' },
+                hidden: { opacity: 0, y: '100%' },
+            }}
+            initial="hidden"
+            animate="show"
+        >
             <Widget.Header>
                 <BackLinkArrow href="/" />
                 <h3>
@@ -149,7 +170,7 @@ function QuestionWidget({
           </pre> */}
                     <Button type="submit" disabled={!hasAlternativeSelected}>
                         Confirmar
-          </Button>
+                    </Button>
                     {isQuestionSubmited && isCorrect && <p>Você acertou!</p>}
                     {isQuestionSubmited && !isCorrect && <p>Você errou!</p>}
                 </AlternativesForm>
@@ -163,7 +184,7 @@ const screenStates = {
     LOADING: 'LOADING',
     RESULT: 'RESULT',
 };
-export default function QuizPage({ externalQuestions, externalBg, name }) { 
+export default function QuizPage({ externalQuestions, externalBg, name }) {
     const [screenState, setScreenState] = React.useState(screenStates.LOADING);
     const [results, setResults] = React.useState([]);
     const [currentQuestion, setCurrentQuestion] = React.useState(0);
@@ -217,7 +238,7 @@ export default function QuizPage({ externalQuestions, externalBg, name }) {
 
                 {screenState === screenStates.LOADING && <LoadingWidget loading={screenState === screenStates.LOADING} />}
 
-                {screenState === screenStates.RESULT && <ResultWidget results={results} name={name}/>}
+                {screenState === screenStates.RESULT && <ResultWidget results={results} name={name} />}
             </QuizContainer>
         </QuizBackground>
     );
